@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;1,300&display=swap');
+
+
+
+html,
+body{
+   overflow-x: clip;
+}
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+h1,
+h2 {
+        font-size: 50px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    
+}
+p {
+   font-family: "Inter Tight", sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+     
+    
+}
+img{
+   width: 100%;
+}
+.btn a {
+   background-image: url(background-color-1.jpg);
+   background-position: center;
+       background: linear-gradient(90deg, rgba(151, 0, 0, 1) 26%, rgba(230, 0, 0, 1) 66%);
+   background-size: cover;
+   padding: 20px 20px;
+   color: white;
+   border-radius: 5px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+}
+.btn a {
+    font-size: 15px;
+    background: linear-gradient(90deg, rgba(151, 0, 0, 1) 26%, rgba(230, 0, 0, 1) 66%);
+    padding: 20px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.btn a::after {
+    content: "\f061";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    padding: 10px 10px 20px;
+    
+}
+
+.fullcontent {
+   text-align: center;
+}
+
+.yourfamily {
+   color: white;
+
+   /* font-optical-sizing: auto;
+   /* font-weight: <weight>;    */
+   font-style: normal;
+   padding: 20px 30px;
+}
+
+.main {
+   background-color: #142748;
+   display: flex;
+   justify-content: center;
+   padding: 100px 15px;
+}
+
+.container {
+   width: 100%;
+   max-width: 1280px;
+   row-gap: 30px;
+}
+
+
+.democracy {
+   width: 100%;
+   /* height: 450px; */
+   border-radius: 25px;
+   border: 15px solid rgba(255, 255, 255, 0.5);
+   margin-bottom: -180px;
+       position: relative;
+    z-index: 11;
+}
+
+/*----------------------------------------------------------FLIGH---------------------------------------------------------- */
+.FLIGHT {
+   display: flex;
+   padding: 200px 0px 100px 0px;
+   width: 100%;
+   border-radius: 0px 20px 20px 0px;
+    /* height: auto; 
+    min-height: 80vh;  */
+   background-image: url("../HOME/IMAGE/image.2.jpg");
+   background-position: center;
+   background-size: cover;
+       column-gap: 25px;
+    position: relative;
+    z-index: 10;
+}
+#FLIGHT p{
+       margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.FLIGHTone {
+   width: 50%;
+}
+
+.FLIGHTtwo {
+   width: 100%;
+   border-radius: 0px 20px 20px 0px;
+       height: auto;
+    /* min-height: 80vh; */
+        object-fit: cover;
+          object-position: center;
+          height: 80vh;
+}
+
+figure {
+   width: 50%;
+}
+
+.container {
+   width: 100%;
+   max-width: 1280px;
+   row-gap: 30px;
+}
+
+.row {
+   /* display: flex; */
+   flex-direction: column;
+   width: 50%;
+   row-gap: 50px; 
+    /* padding: 0px 15px; */
+    padding: 30px 30px;
+
+ 
+
+   /* ------------------------------------------------------------btn------------------------------------------------------------ */
+}
+
+
+.btn a ::after{
+   
+}
+
+
+/*----------------------------------------------------------- Thebook ----------------------------------------------------------*/
+.thebook {
+   
+   
+       font-size: 50px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 900;
+}
+
+
+.text {
+   display: flex;
+   flex-direction: column; 
+   font-family: "Inter Tight", sans-serif;
+   
+   /* padding: 0px 62px; */
+   
+    /* row-gap: 20px; */
+}
+#book .text{
+   padding: 0px 62px;
+    row-gap: 20px;
+}
+
+.r-klanp {
+  
+   
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Inter Tight", sans-serif;
+}
+
+
+.amount {
+  
+   color: red;
+}
+
+.cart {
+   padding: 10px 25px;
+   background-image: url(background-color-1.jpg);
+   background-size: cover;
+   background-position: center;
+   color: white;
+   border-radius: 5px;
+
+}
+.r-klan {
+   width: 100%;
+ 
+}
+
+.thebook1 .imagethree {
+   /* display: flex; */
+       position: relative;
+    width: 92%;
+    bottom: -80px;
+    line-height: 0;
+    border: 8px solid #a0a0a0;
+  
+}
+.thebook1{
+   /* margin-top: 50px; */
+       background-color: #efefef;
+       display: flex;
+    justify-content: center;
+    position: relative;
+}
+#book::before{
+      content: " ";
+      background-image: url("../HOME/IMAGE/2.png");
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      top: -105px;
+      left: -590px;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat; 
+} 
+#book .container{
+   display: flex;
+   align-items: center;
+       width: 100%;
+    max-width: 1280px;
+}
+.image{
+    
+}
+.content{
+       width: 50%;
+    position: relative;
+}
+#book .btn{
+   padding: 20px 0px;
+
+}
+   
+
+/* -------------------------------------------------------------Shop -------------------------------------------------------------*/
+.shirt {
+  
+   border-radius: 30px;
+}
+
+.shirttwo {
+  
+}
+
+.fullshop {
+   text-align: center;
+  display: flex;
+   justify-content: center;
+}
+
+.shop {
+   text-align: center;
+}
+ .Shoponly{
+   display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+        width: 100%;
+    padding: 180px 15px 100px;
+}
+.shop h1{
+   font-weight: 700;
+}
+#shop .content{
+       display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 20px;
+    width: 100%;
+
+}
+#shop .text{
+   padding: 0px 62px;
+           flex-direction: row;
+    justify-content: space-between;
+}
+#shop p{
+       font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.text1{
+   text-align: start;
+}
+
