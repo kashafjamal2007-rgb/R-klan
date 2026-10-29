@@ -4,9 +4,10 @@
 
 
 html,
-body{
+body {
    overflow-x: clip;
 }
+
 * {
    padding: 0;
    margin: 0;
@@ -15,46 +16,51 @@ body{
 
 h1,
 h2 {
-        font-size: 50px;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 400;
-    
+   font-size: 50px;
+   font-family: "Inter Tight", sans-serif;
+   font-weight: 400;
+
 }
+
 p {
    font-family: "Inter Tight", sans-serif;
    font-weight: 400;
    font-size: 18px;
-     
-    
+
+
 }
-img{
+
+img {
    width: 100%;
 }
+
 .btn a {
-   background-image: url(background-color-1.jpg);
+   /* background-image: url(background-color-1.jpg); */
    background-position: center;
-       background: linear-gradient(90deg, rgba(151, 0, 0, 1) 26%, rgba(230, 0, 0, 1) 66%);
+   background: linear-gradient(90deg, rgba(151, 0, 0, 1) 26%, rgba(230, 0, 0, 1) 66%);
    background-size: cover;
    padding: 20px 20px;
    color: white;
-   border-radius: 5px;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 600;
+   border-radius: 8px;
+   font-family: "Inter Tight", sans-serif;
+   font-weight: 600;
+   text-decoration: none;
 }
-.btn a {
+
+/* .btn a {
     font-size: 15px;
     background: linear-gradient(90deg, rgba(151, 0, 0, 1) 26%, rgba(230, 0, 0, 1) 66%);
     padding: 20px 20px;
     border-radius: 8px;
     color: white;
     text-decoration: none;
-}
+} */
 .btn a::after {
-    content: "\f061";
-    font-weight: 900;
-    font-family: "Font Awesome 6 Free";
-    padding: 10px 10px 20px;
-    
+   content: "\f061";
+   font-weight: 900;
+   font-family: "Font Awesome 6 Free";
+   padding: 10px 10px 20px;
+
 }
 
 .fullcontent {
@@ -90,8 +96,8 @@ img{
    border-radius: 25px;
    border: 15px solid rgba(255, 255, 255, 0.5);
    margin-bottom: -180px;
-       position: relative;
-    z-index: 11;
+   position: relative;
+   z-index: 11;
 }
 
 /*----------------------------------------------------------FLIGH---------------------------------------------------------- */
@@ -100,18 +106,19 @@ img{
    padding: 200px 0px 100px 0px;
    width: 100%;
    border-radius: 0px 20px 20px 0px;
-    /* height: auto; 
+   /* height: auto; 
     min-height: 80vh;  */
    background-image: url("../HOME/IMAGE/image.2.jpg");
    background-position: center;
    background-size: cover;
-       column-gap: 25px;
-    position: relative;
-    z-index: 10;
+   column-gap: 25px;
+   position: relative;
+   z-index: 10;
 }
-#FLIGHT p{
-       margin-top: 15px;
-    margin-bottom: 40px;
+
+#FLIGHT p {
+   margin-top: 15px;
+   margin-bottom: 40px;
 }
 
 .FLIGHTone {
@@ -121,11 +128,11 @@ img{
 .FLIGHTtwo {
    width: 100%;
    border-radius: 0px 20px 20px 0px;
-       height: auto;
-    /* min-height: 80vh; */
-        object-fit: cover;
-          object-position: center;
-          height: 80vh;
+   height: auto;
+   /* min-height: 80vh; */
+   object-fit: cover;
+   object-position: center;
+   height: 80vh;
 }
 
 figure {
@@ -142,56 +149,55 @@ figure {
    /* display: flex; */
    flex-direction: column;
    width: 50%;
-   row-gap: 50px; 
-    /* padding: 0px 15px; */
-    padding: 30px 30px;
+   row-gap: 50px;
+   /* padding: 0px 15px; */
+   padding: 30px 30px;
 
- 
+
 
    /* ------------------------------------------------------------btn------------------------------------------------------------ */
 }
 
 
-.btn a ::after{
-   
-}
+.btn a ::after {}
 
 
 /*----------------------------------------------------------- Thebook ----------------------------------------------------------*/
 .thebook {
-   
-   
-       font-size: 50px;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 900;
+
+
+   font-size: 50px;
+   font-family: "Inter Tight", sans-serif;
+   font-weight: 900;
 }
 
 
 .text {
    display: flex;
-   flex-direction: column; 
+   flex-direction: column;
    font-family: "Inter Tight", sans-serif;
-   
+
    /* padding: 0px 62px; */
-   
-    /* row-gap: 20px; */
+
+   /* row-gap: 20px; */
 }
-#book .text{
+
+#book .text {
    padding: 0px 62px;
-    row-gap: 20px;
+   row-gap: 20px;
 }
 
 .r-klanp {
-  
-   
-    font-weight: 500;
-    font-size: 30px;
-    font-family: "Inter Tight", sans-serif;
+
+
+   font-weight: 500;
+   font-size: 30px;
+   font-family: "Inter Tight", sans-serif;
 }
 
 
 .amount {
-  
+
    color: red;
 }
 
@@ -204,108 +210,218 @@ figure {
    border-radius: 5px;
 
 }
+
 .r-klan {
    width: 100%;
- 
+
 }
 
 .thebook1 .imagethree {
    /* display: flex; */
-       position: relative;
-    width: 92%;
-    bottom: -80px;
-    line-height: 0;
-    border: 8px solid #a0a0a0;
-  
+   position: relative;
+   width: 92%;
+   bottom: -80px;
+   line-height: 0;
+   border: 8px solid #a0a0a0;
+
 }
-.thebook1{
+
+.thebook1 {
    /* margin-top: 50px; */
-       background-color: #efefef;
-       display: flex;
-    justify-content: center;
-    position: relative;
+   background-color: #efefef;
+   display: flex;
+   justify-content: center;
+   position: relative;
 }
-#book::before{
-      content: " ";
-      background-image: url("../HOME/IMAGE/2.png");
-      background-size: contain;
-      background-position: center;
-      position: absolute;
-      top: -105px;
-      left: -590px;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat; 
-} 
-#book .container{
+
+#book::before {
+   content: " ";
+   background-image: url("../HOME/IMAGE/2.png");
+   background-size: contain;
+   background-position: center;
+   position: absolute;
+       top: -65px;
+    left: -570px;
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+}
+
+#book .container {
    display: flex;
    align-items: center;
-       width: 100%;
-    max-width: 1280px;
+   width: 100%;
+   max-width: 1280px;
 }
-.image{
-    
+
+.image {}
+
+.content {
+   width: 50%;
+   position: relative;
 }
-.content{
-       width: 50%;
-    position: relative;
-}
-#book .btn{
+
+#book .btn {
    padding: 20px 0px;
 
 }
-   
+
 
 /* -------------------------------------------------------------Shop -------------------------------------------------------------*/
 .shirt {
-  
+
    border-radius: 30px;
 }
 
-.shirttwo {
-  
-}
+.shirttwo {}
 
 .fullshop {
    text-align: center;
-  display: flex;
+   display: flex;
    justify-content: center;
+   column-gap: 30px;
 }
 
 .shop {
    text-align: center;
 }
- .Shoponly{
+
+.Shoponly {
    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-        width: 100%;
-    padding: 180px 15px 100px;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   padding: 180px 15px 100px;
 }
-.shop h1{
+
+.shop h1 {
    font-weight: 700;
 }
-#shop .content{
-       display: flex;
-    justify-content: center;
-    column-gap: 30px;
-    padding-top: 20px;
-    width: 100%;
+
+#shop .content {
+   display: flex;
+   justify-content: center;
+   column-gap: 30px;
+   padding-top: 20px;
+   width: 100%;
 
 }
-#shop .text{
-   padding: 0px 62px;
-           flex-direction: row;
-    justify-content: space-between;
+
+#shop .text {
+   
+   justify-content: space-between;
+   padding-top: 20px;
 }
-#shop p{
-       font-family: "Inter Tight", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+
+#shop p {
+   font-family: "Inter Tight", sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   color: #c82424;
 }
-.text1{
+
+#shop h4 {
+   font-size: 30px;
+   color: #9196a1;
+
+}
+
+#shop img {
+   border-radius: 15px;
+}
+
+#shop .btn {
+   padding-top: 15px;
+
+}
+
+.text1 {
    text-align: start;
 }
-
+/*---------------------------------------------------------- Readers ----------------------------------------------------------*/
+.rev-item *{
+    pointer-events: none;
+}
+.rev-item{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+      background-color: white;
+    border-radius: 12px;
+    padding: 30px 24px;
+    position: relative;
+    /* text-align: center; */
+    margin-top: 40px;
+    flex: 0 0 calc(33.333% - 16px);
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    
+}
+#readers{
+   display: flex;
+   justify-content: center;
+   background-image: url(../HOME/IMAGE/image.1.jpg);
+       background-size: cover;
+    padding: 100px 15px 60px;
+}
+#readers .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.icon-user{
+   width: 120px;
+    fill: #ffffff;
+    filter: drop-shadow(0px 12px 15px #9e9393);
+}
+.google-user{
+   position: absolute;
+   top: 55px;
+   right: 10px;
+   width: 40px;
+}
+.name-will{
+       font-size: 25px;
+    font-weight: 400;
+    color: var(--rev-bg-mobile);
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.star{
+       font-size: 1.4rem;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    width: 150px;
+}
+.Lorem{
+       font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--rev-font-color);
+    margin: 0;
+    text-align: left;
+}
+.fullbox{
+       position: relative;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    user-select: none;
+    width: 85%;
+    max-width: 1200px;
+    column-gap: 20px;
+}
+.icon{
+       
+   
+}
+.rev-top-group{
+   position: absolute;
+    top: -45px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
