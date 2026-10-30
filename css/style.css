@@ -341,73 +341,77 @@ figure {
    text-align: start;
 }
 /*---------------------------------------------------------- Readers ----------------------------------------------------------*/
-/* ================= REVIEW SECTION ================= */
+/* ==============================
+   READERS REVIEW SECTION
+============================== */
  
 #readers {
     display: flex;
     justify-content: center;
+    padding: 100px 15px 60px;
     background-image: url("../HOME/IMAGE/image.1.jpg");
     background-size: cover;
     background-position: center;
-    padding: 80px 15px 60px;
     overflow: hidden;
 }
  
 #readers .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
  
 #readers h2 {
-    font-size: 45px;
+    font-size: 48px;
     font-weight: 400;
+    color: #000;
     text-align: center;
-    margin: 0 0 25px;
-    color: #111;
+    margin: 0 0 65px;
 }
  
 #readers h2 b {
     font-weight: 700;
 }
  
-/* Slider Wrapper */
+/* Slider wrapper */
  
-.review-wrapper {
+.slider-wrapper {
+    width: 100%;
     position: relative;
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
  
-/* Review Cards Container */
+/* Visible slider area */
+ 
+.review-viewport {
+    width: 88%;
+    overflow: hidden;
+    padding: 5px 0 15px;
+}
+ 
+/* Moving track */
  
 .fullbox {
+    position: relative;
     display: flex;
-    gap: 20px;
+    align-items: stretch;
+    gap: 30px;
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
     cursor: grab;
-    padding: 45px 2px 15px;
-    box-sizing: border-box;
-    -webkit-overflow-scrolling: touch;
-}
- 
-.fullbox::-webkit-scrollbar {
-    display: none;
+    user-select: none;
+    touch-action: pan-y;
+    transition: transform 0.6s ease-in-out;
 }
  
 .fullbox:active {
     cursor: grabbing;
 }
  
-/* Individual Review Card */
+/* Review cards */
  
 .rev-item {
     position: relative;
@@ -416,25 +420,29 @@ figure {
     align-items: center;
     flex-direction: column;
  
-    background: #fff;
-    border-radius: 4px;
-    padding: 35px 20px 25px;
-    margin-top: 0;
- 
-    flex: 0 0 calc((100% - 40px) / 3);
+    flex: 0 0 calc((100% - 60px) / 3);
     min-width: 0;
     box-sizing: border-box;
  
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    padding: 85px 25px 30px;
+    margin-top: 40px;
  
-    scroll-snap-align: start;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+ 
+    transition: box-shadow 0.3s ease;
 }
  
-/* User Icon */
+.rev-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+ 
+/* Avatar */
  
 .rev-top-group {
     position: absolute;
-    top: -30px;
+    top: -48px;
     left: 0;
     right: 0;
  
@@ -447,225 +455,229 @@ figure {
 }
  
 .icon figure {
-    position: relative;
     margin: 0;
 }
  
 .icon-user {
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
     object-fit: contain;
-    filter: drop-shadow(0 8px 10px #aaa);
+    filter: drop-shadow(0 10px 12px #bcbcbc);
 }
  
 .google-user {
     position: absolute;
-    top: 28px;
-    right: -100px;
-    width: 28px;
-    height: 28px;
+    top: 55px;
+    right: -120px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
  
-/* Reviewer Name */
+/* Reviewer name */
  
 .name-will {
-    font-size: 18px;
-    font-weight: 600;
-    color: #222;
+    font-size: 25px;
+    font-weight: 500;
+    color: #111;
     text-align: center;
-    margin: 20px 0 8px;
+    margin: 5px 0 10px;
 }
  
-/* Star Image */
+/* Star image */
  
 .star {
-    margin: 0 0 15px;
-    text-align: center;
+    width: 140px;
+    height: auto;
+    margin-bottom: 20px;
 }
  
 .star img {
     display: block;
-    width: 100px;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
+    object-fit: contain;
 }
  
-/* Review Text */
+/* Review text */
  
 .Lorem {
     width: 100%;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.7;
-    color: #555;
+    font-style: italic;
+    color: #222;
     margin: 0;
     text-align: left;
     overflow-wrap: break-word;
 }
  
-/* ================= NAVIGATION BUTTONS ================= */
+/* Previous / Next buttons */
  
-.review-btn {
+.slider-btn {
     position: absolute;
     top: 55%;
     transform: translateY(-50%);
  
-    width: 38px;
-    height: 38px;
+    width: 46px;
+    height: 46px;
     border: none;
     border-radius: 50%;
  
-    background: #b00008;
-    color: #fff;
- 
-    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
  
+    background: #a00000;
+    color: #fff;
+    font-size: 23px;
     cursor: pointer;
     z-index: 5;
  
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
 }
  
-.review-btn:hover {
-    background: #850006;
+.slider-btn:hover {
+    background: #700000;
     transform: translateY(-50%) scale(1.08);
 }
  
 .prev-btn {
-    left: -52px;
+    left: 0;
+    background: #dedede;
+    color: white;
+    background-color: #a00000;
+}
+ 
+.prev-btn:hover {
+    background: #c5c5c5;
 }
  
 .next-btn {
-    right: -52px;
+    right: 0;
 }
  
-.review-btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
+.slider-btn:focus-visible {
+    outline: 3px solid #555;
+    outline-offset: 3px;
 }
  
-/* ================= SCROLL DOTS ================= */
+/* ==============================
+   TABLET
+============================== */
  
-.review-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-}
- 
-.review-dot {
-    width: 9px;
-    height: 9px;
-    border: none;
-    padding: 0;
-    border-radius: 50%;
-    background: #c9c9c9;
-    cursor: pointer;
-    transition: all 0.3s;
-}
- 
-.review-dot.active {
-    background: #b00008;
-    transform: scale(1.25);
-}
- 
-/* ================= RESPONSIVE ================= */
- 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
  
     #readers {
-        padding: 60px 15px 40px;
+        padding: 80px 15px 50px;
     }
  
     #readers h2 {
-        font-size: 28px;
+        font-size: 40px;
     }
  
-    .review-wrapper {
-        width: 85%;
+    .review-viewport {
+        width: 86%;
+    }
+ 
+    .fullbox {
+        gap: 20px;
     }
  
     .rev-item {
-        flex: 0 0 calc((100% - 20px) / 2);
-        padding: 30px 15px 20px;
-    }
- 
-    .prev-btn {
-        left: -40px;
-    }
- 
-    .next-btn {
-        right: -40px;
+        flex-basis: calc((100% - 20px) / 2);
+        padding: 80px 20px 25px;
     }
  
     .name-will {
-        font-size: 16px;
+        font-size: 21px;
     }
  
     .Lorem {
-        font-size: 13px;
-    }
- 
-    .google-user {
-        right: -75px;
-    }
-}
- 
-@media (max-width: 480px) {
- 
-    #readers h2 {
-        font-size: 24px;
-    }
- 
-    .review-wrapper {
-        width: 78%;
-    }
- 
-    .rev-item {
-        flex: 0 0 100%;
-        padding: 30px 25px 20px;
-    }
- 
-    .review-btn {
-        width: 30px;
-        height: 30px;
         font-size: 15px;
     }
  
-    .prev-btn {
-        left: -35px;
+    .google-user {
+        right: -120px;
+    }
+}
+ 
+/* ==============================
+   MOBILE
+============================== */
+ 
+@media (max-width: 600px) {
+ 
+    #readers {
+        padding: 65px 10px 40px;
     }
  
-    .next-btn {
-        right: -35px;
+    #readers h2 {
+        font-size: 29px;
+        margin-bottom: 35px;
+    }
+ 
+    .review-viewport {
+        width: calc(100% - 70px);
+    }
+ 
+    .fullbox {
+        gap: 0;
+    }
+ 
+    .rev-item {
+        flex-basis: 100%;
+        margin-top: 40px;
+        padding: 75px 20px 25px;
     }
  
     .icon-user {
-        width: 70px;
-        height: 70px;
+        width: 95px;
+        height: 95px;
     }
  
-    .name-will {
-        font-size: 16px;
-        margin-top: 15px;
-    }
- 
-    .Lorem {
-        font-size: 13px;
+    .rev-top-group {
+        top: -40px;
     }
  
     .google-user {
-        right: -65px;
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
+        top: 45px;
+        right: -95px;
+    }
+ 
+    .name-will {
+        font-size: 20px;
+    }
+ 
+    .star {
+        width: 125px;
+    }
+ 
+    .Lorem {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+ 
+    .slider-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+ 
+    .prev-btn {
+        left: 0;
+    }
+ 
+    .next-btn {
+        right: 0;
     }
 }
+ 
+
 /* -----------------------------------------Note -----------------------------------------*/
 #note{
    background-image: url(../HOME/IMAGE/1.jpg);
