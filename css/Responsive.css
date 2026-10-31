@@ -123,7 +123,7 @@
         width: 100%;
     }
 
-    figure {
+   #FLIGHT figure {
         width: 100%;
     }
 
@@ -131,6 +131,9 @@
         font-size: 25px;
         padding: 10px;
     } */
+     #klan figure{
+        width: 50%;
+     }
    
 
 }
@@ -180,7 +183,37 @@
     #shop .text {
         flex-direction: row;
     }
+  
 
 }
 
-@media(max-width:735px) {}
+@media(max-width:735px) {
+     #Donate .fullcontent{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    #Donate{
+                padding: 60px 15px;
+    }
+    #Donate .btn{
+                padding: 60px 15px;
+
+    }
+    #klan .contentone{
+        flex-wrap: wrap;
+    }
+    #klan{
+        padding: 60px 15px;
+    }
+    #klan .image{
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 35px;
+    }
+    #r-klan .image:first-child img{
+        max-width: 350px;
+    }
+}
