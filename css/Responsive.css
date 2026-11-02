@@ -183,14 +183,16 @@
      }
      #klan .textcall{
         margin-top: 40px;
-          row-gap: 50px;
+          row-gap: 40px;
+          width: 100%;
     
      }
   
 
 }
 
-@media(max-width:390px) {}
+@media(max-width:700px) {}
+
 
 @media(min-width:765px) {
 
