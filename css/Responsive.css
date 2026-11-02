@@ -6,6 +6,13 @@
     /* .afamily p{
         font-size: 20px;
     } */
+     #klan .text{
+            font-size: 15px;
+     }
+     .content2 p{
+        font-size: 15px;
+     }
+    
 
 
 }
@@ -101,7 +108,9 @@
 
 }
 
-@media(max-width:991px) {}
+@media(max-width:991px) {
+    
+}
 
 @media(max-width:768px) {
     .FLIGHT {
@@ -171,6 +180,11 @@
     } */
        #note .content{
         text-align: center;
+     }
+     #klan .textcall{
+        margin-top: 40px;
+          row-gap: 35px;
+    
      }
   
 

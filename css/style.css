@@ -806,7 +806,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     font-weight: 700;
-    margin-top: 30px;
+
 }
 #klan .content2{
         border-top: 1px solid;
@@ -824,3 +824,27 @@ text-align: center;
     width: 100px;
     padding-right: 20px;
 }
+#klan .textcall p:first-child::before{
+    content: "\f095";
+    font-weight: 900;
+     font-family: "Font Awesome 6 Free";
+}
+#klan .textcall p:nth-child(2)::before{
+    content: "\f3c5";
+     font-weight: 900;
+        font-family: "Font Awesome 6 Free";
+
+}
+#klan .textcall p:last-child::before{
+    content: "\f0e0";
+    font-weight: 900;
+     font-family: "Font Awesome 6 Free";
+
+}
+#klan .textcall p:first-child,
+#klan .textcall p:nth-child(2),
+#klan .textcall p:last-child{
+ display: flex;
+ column-gap: 10px;
+}
+
