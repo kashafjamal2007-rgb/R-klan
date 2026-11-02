@@ -105,6 +105,8 @@
     #shop .btn {
         text-align: start;
     }
+    #readers .google-user {
+        right: -100px;
 
 }
 
