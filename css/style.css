@@ -847,4 +847,35 @@ text-align: center;
  display: flex;
  column-gap: 10px;
 }
+    #klan .text a:hover,
+    #klan .text p:hover,
+    #klan .text p:nth-child(2):hover {
+        color: red;
+        transition: 1s;
+    }
+     #klan .textcall a:hover,
+    #klan .textcall p:hover,
+    #klan .textcall p:nth-child(2):hover {
+        color: red;
+        transition: 1s;
+    }
+ /* /-------------------------------------------------- ---Aboutsection--------------- -------------------------------- */
 
+#aboutFLIGHT .container{
+    display: flex;
+    justify-content: center;
+    margin: 0px 15px;
+}
+.aboutrow{
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+        padding: 30px 30px;
+        row-gap: 30px;
+}
+#aboutFLIGHT figure{
+    width: 100%;
+}
+.FLIGHTab{
+    border-radius: 20px 20px 20px 20px;
+}
