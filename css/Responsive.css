@@ -106,9 +106,9 @@
 }
 
 @media(max-width:900px) {
-    #klan .textcall{
+    /* #klan .textcall{
             width: 25%;
-    }
+    } */
     
 }
 
@@ -191,7 +191,11 @@
 
 }
 
-@media(max-width:700px) {}
+@media(max-width:730px) {
+    /* #klan .textcall{
+        width: 60%;
+    }
+} */
 
 
 @media(min-width:765px) {
