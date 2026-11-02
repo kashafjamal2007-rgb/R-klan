@@ -9,9 +9,6 @@
      #klan .text{
             font-size: 15px;
      }
-     .content2 p{
-        font-size: 15px;
-     }
     
 
 
@@ -105,12 +102,13 @@
     #shop .btn {
         text-align: start;
     }
-    #readers .google-user {
-        right: -100px;
 
 }
 
-@media(max-width:991px) {
+@media(max-width:900px) {
+    #klan .textcall{
+            width: 25%;
+    }
     
 }
 
@@ -185,7 +183,7 @@
      }
      #klan .textcall{
         margin-top: 40px;
-          row-gap: 35px;
+          row-gap: 50px;
     
      }
   
