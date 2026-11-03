@@ -6,10 +6,10 @@
     /* .afamily p{
         font-size: 20px;
     } */
-     #klan .text{
-            font-size: 15px;
-     }
-    
+    #klan .text {
+        font-size: 15px;
+    }
+
 
 
 }
@@ -109,7 +109,7 @@
     /* #klan .textcall{
             width: 25%;
     } */
-    
+
 }
 
 @media(max-width:768px) {
@@ -132,7 +132,7 @@
         width: 100%;
     }
 
-   #FLIGHT figure {
+    #FLIGHT figure {
         width: 100%;
     }
 
@@ -140,10 +140,10 @@
         font-size: 25px;
         padding: 10px;
     } */
-     #klan figure{
+    #klan figure {
         width: 50%;
-     }
-   
+    }
+
 
 }
 
@@ -178,16 +178,17 @@
     /* #shop h4{
                 font-size: 25px;
     } */
-       #note .content{
+    #note .content {
         text-align: center;
-     }
-     #klan .textcall{
+    }
+
+    #klan .textcall {
         margin-top: 40px;
-          row-gap: 40px;
-          width: 100%;
-    
-     }
-  
+        row-gap: 40px;
+        width: 100%;
+
+    }
+
 
 }
 
@@ -195,7 +196,7 @@
     /* #klan .textcall{
         width: 50%;
     } */
-  
+
 }
 
 
@@ -204,37 +205,96 @@
     #shop .text {
         flex-direction: row;
     }
-  
+
 
 }
 
 @media(max-width:735px) {
-     #Donate .fullcontent{
+    #Donate .fullcontent {
         flex-direction: column;
         align-items: flex-start;
-        
-    }
-    #Donate{
-                padding: 60px 15px;
-    }
-    #Donate .btn{
-                padding: 60px 15px;
 
     }
-    #klan .contentone{
-        flex-wrap: wrap;
-    }
-    #klan{
+
+    #Donate {
         padding: 60px 15px;
     }
-    #klan .image{
+
+    #Donate .btn {
+        padding: 60px 15px;
+
+    }
+
+    #klan .contentone {
+        flex-wrap: wrap;
+    }
+
+    #klan {
+        padding: 60px 15px;
+    }
+
+    #klan .image {
         flex: 0 0 100%;
         max-width: 100%;
         justify-content: center;
         align-items: center;
         padding-bottom: 35px;
     }
-    #r-klan .image:first-child img{
+
+    #r-klan .image:first-child img {
         max-width: 350px;
     }
 }
+
+/*---------------------------------------------------------- About---------------------------------------------------------- */
+@media(max-width:1440px) {
+    .FLIGHTab{
+        height: auto;
+        min-height: 500px;
+    }
+ 
+}
+ 
+@media(max-width:1280px) {
+   
+}
+ 
+@media(max-width:1199px) {
+   
+}
+ 
+@media(max-width:1024px) {
+    .aboutrow{
+                padding: 30px 30px;
+    }
+}
+ 
+@media(max-width:991px) {
+   
+}
+ 
+@media(max-width:768px) {
+    #aboutFLIGHT .container{
+        flex-direction: column;
+    }
+    #aboutFLIGHT .FLIGHTab{
+       
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+   
+}
+ 
+@media(max-width:480px) {
+   
+}
+ 
+@media(max-width:390px) {
+   
+}
+ 
+@media(min-width:320px) {
+   
+}
+ 

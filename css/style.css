@@ -758,7 +758,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-        padding: 100px 15px 35px;
+    padding: 100px 15px 35px;
     width: 100%;
 }
 #klan .contentone{
@@ -773,7 +773,6 @@ text-align: center;
     row-gap: 60px;
     max-width: 350px;
     width: 100%;
-
 }
 #klan .image-1{
         column-gap: 10px;
@@ -879,4 +878,40 @@ text-align: center;
 }
 .FLIGHTab{
     border-radius: 20px 20px 20px 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*------------------------------------------------------- Why Choose Us------------------------------------------------------- */
+#Choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    padding: 100px 15px;
+    position: relative;
+
+}
+#Choose .Choosetext{
+    width: 50%;
+    row-gap: 25px;
+    position: relative;
+    z-index: 2;
+}
+.Choosetext{
+    display: flex;
+    flex-direction: column;
+}
+#Choose .lowertext{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+#Choose .lowertext p::before{
+    content: "\f058";
+    font-weight: 400;
+    font-family: "Font Awesome 6 Free";
+    padding-right: 15px;
+    color: red  ;
+
 }
