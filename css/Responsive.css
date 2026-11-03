@@ -282,8 +282,17 @@
         margin-right: 0px;
         margin-top: 0px;
     }
+    #aboutFLIGHT figure{
+    margin-right: 30px;
+}
+#aboutFLIGHT{
+                padding: 150px 0px 60px 0px;
+}
+#aboutFLIGHT .aboutrow{
+ padding: 10px 10px;
+}
 
-   
+  
 }
  
 @media(max-width:480px) {

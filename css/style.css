@@ -912,6 +912,9 @@ text-align: center;
     font-weight: 400;
     font-family: "Font Awesome 6 Free";
     padding-right: 15px;
-    color: red  ;
+    color: red ;
 
+}
+#Choose figure{
+    margin-right: 30px;
 }
