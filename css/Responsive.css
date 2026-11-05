@@ -277,6 +277,17 @@
     #aboutFLIGHT .container{
         flex-direction: column;
     }
+    #Choose .container{
+        flex-direction: column;
+        /* align-items: start; */
+    }
+    #Choose .Choosetext{
+        width: 100%;
+        row-gap: 15px;
+    }
+    #Choose .lowertext{
+        row-gap: 15px;
+    }
     #aboutFLIGHT .FLIGHTab{
        
         margin-right: 0px;
@@ -286,7 +297,7 @@
     margin-right: 30px;
 }
 #aboutFLIGHT{
-                padding: 150px 0px 60px 0px;
+ padding: 150px 0px 60px 0px;
 }
 #aboutFLIGHT .aboutrow{
  padding: 10px 10px;
@@ -303,7 +314,12 @@
    
 }
  
-@media(min-width:320px) {
-   
+@media(min-width:1200px) {
+   #Choose .FLIGHT2{
+            min-height: 520px;
+   }
+   #Choose .Choosetext{
+    row-gap: 20px;
+   }
 }
  
