@@ -270,6 +270,10 @@
 }
  
 @media(max-width:991px) {
+    #Lorem .come{
+    padding-right: 50px;
+    }
+
    
 }
  
@@ -294,7 +298,10 @@
         margin-top: 0px;
     }
     #aboutFLIGHT figure{
-    margin-right: 30px;
+    margin-right: 30px;}
+    
+    #Lorem{
+      padding: 140px 15px 60px;
 }
 #aboutFLIGHT{
  padding: 150px 0px 60px 0px;
@@ -307,10 +314,17 @@
 }
  
 @media(max-width:480px) {
+    #Lorem h4{
+        font-size: 25px;
+    }
    
 }
  
-@media(max-width:390px) {
+@media(max-width:600px) {
+    #Lorem .come{
+     padding: 30px 20px;
+    }
+
    
 }
  
@@ -320,6 +334,9 @@
    }
    #Choose .Choosetext{
     row-gap: 20px;
+   }
+   #Lorem .come{
+   
    }
 }
  
