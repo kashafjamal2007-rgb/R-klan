@@ -303,6 +303,13 @@
     #Lorem{
       padding: 140px 15px 60px;
 }
+#changed .container{
+    flex-direction: column;
+    row-gap: 30px;
+}
+#changed{   
+padding: 150px 15px 60px;
+}
 #aboutFLIGHT{
  padding: 150px 0px 60px 0px;
 }
@@ -335,8 +342,6 @@
    #Choose .Choosetext{
     row-gap: 20px;
    }
-   #Lorem .come{
-   
-   }
+
 }
  
