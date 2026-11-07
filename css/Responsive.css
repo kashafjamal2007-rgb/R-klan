@@ -153,7 +153,7 @@
         align-items: flex-start;
     }
 
-    .fulltext {
+   #book .fulltext {
         padding: 50px 30px;
 
     }
@@ -248,100 +248,118 @@
 
 /*---------------------------------------------------------- About---------------------------------------------------------- */
 @media(max-width:1440px) {
-    .FLIGHTab{
+    .FLIGHTab {
         height: auto;
         min-height: 500px;
     }
- 
+
 }
- 
-@media(max-width:1280px) {
-   
-}
- 
-@media(max-width:1199px) {
-   
-}
- 
+
+@media(max-width:1280px) {}
+
+@media(max-width:1199px) {}
+
 @media(max-width:1024px) {
-    .aboutrow{
-                padding: 30px 30px;
+    .aboutrow {
+        padding: 30px 30px;
     }
 }
- 
+
 @media(max-width:991px) {
-    #Lorem .come{
-    padding-right: 50px;
+    #Lorem .come {
+        padding-right: 50px;
     }
 
-   
+
 }
- 
+
 @media(max-width:768px) {
-    #aboutFLIGHT .container{
+    #aboutFLIGHT .container {
         flex-direction: column;
     }
-    #Choose .container{
+
+    #Choose .container {
         flex-direction: column;
         /* align-items: start; */
     }
-    #Choose .Choosetext{
+
+    #Choose .Choosetext {
         width: 100%;
         row-gap: 15px;
     }
-    #Choose .lowertext{
+
+    #Choose .lowertext {
         row-gap: 15px;
     }
-    #aboutFLIGHT .FLIGHTab{
-       
+
+    #aboutFLIGHT .FLIGHTab {
+
         margin-right: 0px;
         margin-top: 0px;
     }
-    #aboutFLIGHT figure{
-    margin-right: 30px;}
-    
-    #Lorem{
-      padding: 140px 15px 60px;
-}
-#changed .container{
-    flex-direction: column;
-    row-gap: 30px;
-}
-#changed{   
-padding: 150px 15px 60px;
-}
-#aboutFLIGHT{
- padding: 150px 0px 60px 0px;
-}
-#aboutFLIGHT .aboutrow{
- padding: 10px 10px;
+
+    #aboutFLIGHT figure {
+        margin-right: 30px;
+    }
+
+    #Lorem {
+        padding: 140px 15px 60px;
+    }
+
+    #changed .container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    #changed figure {
+        width: 100%;
+    }
+
+    #changed .container {
+        align-items: start;
+    }
+
+    .Contact {
+        width: 100%;
+    }
+
+    #changed {
+        padding: 150px 15px 60px;
+    }
+
+    #aboutFLIGHT {
+        padding: 150px 0px 60px 0px;
+    }
+
+    #aboutFLIGHT .aboutrow {
+        padding: 10px 10px;
+    }
+
+
 }
 
-  
-}
- 
 @media(max-width:480px) {
-    #Lorem h4{
+    #Lorem h4 {
         font-size: 25px;
     }
-   
+
 }
- 
+
 @media(max-width:600px) {
-    #Lorem .come{
-     padding: 30px 20px;
+    #Lorem .come {
+        padding: 30px 20px;
     }
 
-   
-}
- 
-@media(min-width:1200px) {
-   #Choose .FLIGHT2{
-            min-height: 520px;
-   }
-   #Choose .Choosetext{
-    row-gap: 20px;
-   }
 
 }
- 
+
+@media(min-width:1200px) {
+    #Choose .FLIGHT2 {
+        min-height: 520px;
+    }
+
+    #Choose .Choosetext {
+        row-gap: 20px;
+    }
+
+}
