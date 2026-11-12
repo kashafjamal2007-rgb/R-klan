@@ -16,7 +16,7 @@
 
 @media (max-width: 760px) {
     .main {
-        padding: 60px 15px;
+        /* padding: 60px 15px; */
 
     }
 
@@ -262,6 +262,28 @@
 @media(max-width:1024px) {
     .aboutrow {
         padding: 30px 30px;
+    }
+    #toggle{
+         display: block;
+        /* position: absolute; */
+        right: 15px;
+        padding: 10px;
+        background-color: rgb(255, 47, 0);
+        border: 2px solid black;
+        cursor: pointer;
+    }
+    #Nav-bar .content{
+        flex-wrap:wrap ;
+    }
+    .mobile-nav{
+        display: block;
+
+    }
+    #Nav-bar .content{
+        flex-wrap:wrap ;
+    }
+    #Nav-bar .text-header{
+        display: none;
     }
 }
 
