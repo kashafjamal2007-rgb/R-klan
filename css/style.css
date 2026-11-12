@@ -993,7 +993,7 @@ figure {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 200px 15px;
+    padding: 180px 15px;
 }
 
 #Lorem .container {
@@ -1228,3 +1228,4 @@ textarea::placeholder {
     object-fit: cover;
     height: 620px;
  }
+ 
