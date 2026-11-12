@@ -824,7 +824,7 @@ figure {
     display: flex;
     flex-direction: column;
     font-weight: 700;
-    width: 20%;
+    /* width: 20%; */
 
 }
 
@@ -914,6 +914,20 @@ figure {
     object-fit: cover;
     object-position: center;
 }
+.about-image{
+         width: 100%;
+    max-width: 1300px;
+    border: 15px solid rgba(255, 255, 235, 0.3);
+    border-radius: 30px;
+    /* margin-bottom: -100px; */
+    position: relative;
+    z-index: 3;
+}
+.about-img{
+        border-radius: 15px;
+    object-fit: cover;
+    height: 620px;
+}
 
 
 /*------------------------------------------------------- Why Choose Us------------------------------------------------------- */
@@ -979,7 +993,7 @@ figure {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 130px 15px;
+    padding: 200px 15px;
 }
 
 #Lorem .container {
@@ -1035,6 +1049,9 @@ figure {
     background-color: #ffff;
     width: 100%;
     padding: 200px 15px 100px;
+}
+.position-bottom{
+       object-position: center bottom;
 }
 
 #changed .container {
@@ -1102,6 +1119,20 @@ textarea::placeholder {
     min-height: 450px;
     width: 100%;
     border-radius: 20px 20px 20px 20px;
+}
+.image-contact{
+        width: 100%;
+    max-width: 1300px;
+    border: 15px solid rgba(255, 255, 235, 0.3);
+    border-radius: 30px;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 3;
+}
+#image-call {
+ border-radius: 15px;
+    object-fit: cover;
+    height: 620px;
 }
 /* ----------------------------------------------------------header---------------------------------------------------------- */
 #Nav-bar{
@@ -1182,4 +1213,18 @@ textarea::placeholder {
  #Nav-bar.icon-nav a:hover{
     color: red;
      transition: 1s;
+ }
+ .Reviews-div{
+    width: 100%;
+    max-width: 1300px;
+    border: 15px solid rgba(255, 255, 235, 0.3);
+    border-radius: 30px;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 3; 
+ }
+ .reviews-img{
+    border-radius: 15px;
+    object-fit: cover;
+    height: 620px;
  }

@@ -17,6 +17,7 @@
 @media (max-width: 760px) {
     .main {
         /* padding: 60px 15px; */
+        
 
     }
 
@@ -285,6 +286,15 @@
     #Nav-bar .text-header{
         display: none;
     }
+    #image-call{
+        height: 400px;
+    }
+    #about-res{
+        height: 400px;
+    }
+    #reviews-image{
+        height: 400px;
+    }
 }
 
 @media(max-width:991px) {
@@ -356,13 +366,30 @@
     #aboutFLIGHT .aboutrow {
         padding: 10px 10px;
     }
-
+    #image-call{
+        height: 300px;
+    }
+    #about-res{
+        height: 300px;
+    }
+    #reviews-image{
+        height: 300px;
+    }
 
 }
 
 @media(max-width:480px) {
     #Lorem h4 {
         font-size: 25px;
+    }
+    #image-call{
+        height: 250px   ;
+    }
+    #about-res{
+        height: 250px;
+    }
+    #reviews-image{
+        height: 250px;
     }
 
 }
