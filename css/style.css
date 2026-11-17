@@ -1124,3 +1124,33 @@ textarea::placeholder {
      transition: 1s;
 
 }
+#r-klan-header .mobile-nav{
+    background-color: black;
+}
+#mobileNav ul{
+    list-style: none;
+}
+#mobileNav .text li a{
+   color: white;
+       border-bottom: 2px solid;
+       font-size: 18px;
+}
+
+/* .r-klan-header .text li a{
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid;
+    border-color: var(--rev-box-bg);
+} */
+ #mobileNav a{
+    color: white;
+ }
+.text{
+     list-style: none;
+    
+ }
+ #mobileNav .icon-nav{
+    padding-top: 20px ;
+ }
+ 
+ 
