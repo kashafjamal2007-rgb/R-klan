@@ -347,9 +347,9 @@ figure {
    READERS REVIEW SECTION
 ============================== */
 
- 
+
 /* Readers Section */
- 
+
 #readers {
     display: flex;
     justify-content: center;
@@ -359,21 +359,21 @@ figure {
     padding: 100px 15px 60px;
     overflow: hidden;
 }
- 
+
 #readers .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
- 
+
 #readers h2 {
     text-align: center;
     margin-bottom: 25px;
 }
- 
+
 /* Slider Main Wrapper */
- 
+
 .review-slider {
     position: relative;
     width: 90%;
@@ -382,64 +382,64 @@ figure {
     align-items: center;
     justify-content: center;
 }
- 
+
 /* Slider View */
- 
+
 .fullbox {
     width: 100%;
     overflow: hidden;
     cursor: grab;
     user-select: none;
 }
- 
+
 .fullbox:active {
     cursor: grabbing;
 }
- 
+
 /* Slider Track */
- 
+
 .slider-track {
     display: flex;
     gap: 20px;
     transition: transform 0.6s ease-in-out;
     will-change: transform;
 }
- 
+
 /* Review Card */
- 
+
 .rev-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
- 
+
     background-color: white;
     border-radius: 12px;
     padding: 30px 24px;
- 
+
     position: relative;
     margin-top: 40px;
- 
+
     flex: 0 0 calc((100% - 40px) / 3);
     box-sizing: border-box;
- 
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
- 
+
 /* User Icon */
- 
+
 .icon-user {
     width: 120px;
     filter: drop-shadow(0px 12px 15px #9e9393);
 }
- 
+
 .google-user {
     position: absolute;
     top: 55px;
     right: 10px;
     width: 40px;
 }
- 
+
 .rev-top-group {
     position: absolute;
     top: -45px;
@@ -448,7 +448,7 @@ figure {
     display: flex;
     justify-content: center;
 }
- 
+
 .name-will {
     font-size: 25px;
     font-weight: 400;
@@ -456,14 +456,14 @@ figure {
     margin-top: 70px;
     margin-bottom: 10px;
 }
- 
+
 .star {
     font-size: 1.4rem;
     margin-bottom: 16px;
     letter-spacing: 2px;
     width: 150px;
 }
- 
+
 .Lorem {
     font-size: 0.92rem;
     line-height: 1.6;
@@ -471,81 +471,81 @@ figure {
     margin: 0;
     text-align: left;
 }
- 
+
 /* Slider Arrows */
- 
+
 .slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
- 
+
     width: 42px;
     height: 42px;
     border: none;
     border-radius: 50%;
- 
+
     background: #970000;
     color: white;
- 
+
     font-size: 20px;
     cursor: pointer;
     z-index: 5;
- 
+
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
     transition: 0.3s;
 }
- 
+
 .slider-btn:hover {
     background: #e60000;
 }
- 
+
 .slider-btn.prev {
     left: -55px;
     background: #eeeeee;
     color: #999;
 }
- 
+
 .slider-btn.next {
     right: -55px;
 }
- 
+
 /* Responsive */
- 
+
 @media (max-width: 900px) {
     .rev-item {
         flex: 0 0 calc((100% - 20px) / 2);
     }
 }
- 
+
 @media (max-width: 600px) {
     .review-slider {
         width: 85%;
     }
- 
+
     .rev-item {
         flex: 0 0 100%;
     }
- 
+
     .slider-btn.prev {
         left: -42px;
     }
- 
+
     .slider-btn.next {
         right: -42px;
     }
- 
+
     .name-will {
         font-size: 20px;
     }
- 
+
     #readers {
         padding: 70px 15px 50px;
     }
 }
- 
+
 
 
 /* -----------------------------------------Note -----------------------------------------*/
@@ -1114,26 +1114,34 @@ textarea::placeholder {
     object-fit: cover;
     height: 620px;
 }
-#Nav-bar .text-header a:hover{
+
+#Nav-bar .text-header a:hover {
     color: red;
     transition: 1s;
 }
-#Nav-bar .icon-nav a :hover{
-    background-color: red;
+
+#Nav-bar .icon-nav a :hover {
+    background-color: red;  
     color: white;
-     transition: 1s;
+    transition: 1s;
 
 }
-#r-klan-header .mobile-nav{
+
+#r-klan-header .mobile-nav {
     background-color: black;
 }
-#mobileNav ul{
+
+#mobileNav ul {
     list-style: none;
 }
-#mobileNav .text li a{
-   color: white;
-       border-bottom: 2px solid;
-       font-size: 18px;
+
+#mobileNav .text li a {
+    color: white;
+    border-bottom: 2px solid;
+    font-size: 18px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* .r-klan-header .text li a{
@@ -1142,15 +1150,26 @@ textarea::placeholder {
     border-bottom: 2px solid;
     border-color: var(--rev-box-bg);
 } */
- #mobileNav a{
+#mobileNav a {
     color: white;
- }
-.text{
-     list-style: none;
-    
- }
- #mobileNav .icon-nav{
-    padding-top: 20px ;
- }
- 
- 
+}
+
+.text {
+    list-style: none;
+     row-gap: 20px;
+
+}
+
+#mobileNav .icon-nav {
+     padding: 15px;
+    display: flex;
+    column-gap: 10px;
+}
+.fa-solid, .fas{
+color: white;
+        font-size: 16px;
+}
+ .mobile-nav .text ul li a.active a:hover {
+    background-color: #c82424;
+    color: white;
+}
