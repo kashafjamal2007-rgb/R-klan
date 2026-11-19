@@ -401,8 +401,6 @@
     #Lorem .come {
         padding: 30px 20px;
     }
-
-
 }
 
 @media(min-width:1200px) {
@@ -423,7 +421,7 @@
     background-color: black;
   }
   .mobile-nav{
-            position: absolute;
+       position: absolute;
         width: 100%;
         left: 0px;
         top: 90px;

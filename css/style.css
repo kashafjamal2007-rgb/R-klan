@@ -412,17 +412,13 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     background-color: white;
     border-radius: 12px;
     padding: 30px 24px;
-
     position: relative;
     margin-top: 40px;
-
     flex: 0 0 calc((100% - 40px) / 3);
     box-sizing: border-box;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
@@ -1121,7 +1117,7 @@ textarea::placeholder {
 }
 
 #Nav-bar .icon-nav a :hover {
-    background-color: red;  
+    background-color: red;
     color: white;
     transition: 1s;
 
@@ -1156,20 +1152,23 @@ textarea::placeholder {
 
 .text {
     list-style: none;
-     row-gap: 20px;
+    row-gap: 20px;
 
 }
 
 #mobileNav .icon-nav {
-     padding: 15px;
+    padding: 15px;
     display: flex;
     column-gap: 10px;
 }
-.fa-solid, .fas{
-color: white;
-        font-size: 16px;
+
+.fa-solid,
+.fas {
+    color: white;
+    font-size: 16px;
 }
- .mobile-nav .text ul li a.active a:hover {
+
+.mobile-nav .text ul li a.active a:hover {
     background-color: #c82424;
     color: white;
 }
