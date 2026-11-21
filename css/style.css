@@ -1009,7 +1009,7 @@ textarea::placeholder {
     transition: transform 0.4s ease-in-out;
     transform: translateY(0);
 }
-#content-nav{
+#Nav-bar .content{
     padding: 10px 15px;
 }
 
