@@ -326,7 +326,6 @@ figure {
 #shop h4 {
     font-size: 30px;
     color: #9196a1;
-
 }
 
 #shop img {
@@ -335,7 +334,6 @@ figure {
 
 #shop .btn {
     padding-top: 15px;
-
 }
 
 .text1 {
@@ -474,23 +472,18 @@ figure {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     width: 42px;
     height: 42px;
     border: none;
     border-radius: 50%;
-
     background: #970000;
     color: white;
-
     font-size: 20px;
     cursor: pointer;
     z-index: 5;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: 0.3s;
 }
 
@@ -590,7 +583,7 @@ figure {
     z-index: -1;
 }
 
-/*----------------------------------------------------------- Donate -----------------------------------------------------------*/
+/*---------------------------------------------------------- Donate ----------------------------------------------------------*/
 #Donate {
     display: flex;
     justify-content: center;
@@ -1008,7 +1001,6 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 10px 15px;
     background-color: #ffff;
     top: 0;
     left: 0;
@@ -1016,6 +1008,9 @@ textarea::placeholder {
     z-index: 15;
     transition: transform 0.4s ease-in-out;
     transform: translateY(0);
+}
+#content-nav{
+    padding: 10px 15px;
 }
 
 
