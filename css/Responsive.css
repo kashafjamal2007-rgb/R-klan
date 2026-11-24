@@ -338,7 +338,7 @@
     }
 
     #Lorem {
-        padding: 140px 15px 60px;
+        padding: 0px 15px 60px;
     }
 
     #changed .container {
@@ -429,3 +429,27 @@
   }
    
 }
+@media(max-width:1024px) {
+ #yourfamily .democracy{
+    height: 400px;
+ }
+}
+
+@media(max-width:900px) {
+ #yourfamily .democracy{
+    height: 400px;
+ }
+}
+/* @media(max-width:768px) {
+     #yourfamily .democracy{
+    height: 300px;
+ }
+} */
+/* @media(max-width:480px) {
+         #yourfamily .democracy{
+    height: px;
+ }
+} */
+
+
+
