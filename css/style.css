@@ -417,6 +417,12 @@ figure {
 /* ==============================
    READERS REVIEW SECTION
 ============================== */
+#readers .slider-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
+}
 
 
 /* Readers Section */
@@ -457,7 +463,7 @@ figure {
 /* Slider View */
 
 .fullbox {
-    width: 100%;
+    width: 100%;    
     overflow: hidden;
     cursor: grab;
     user-select: none;
@@ -492,7 +498,11 @@ figure {
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
-
+/* #readers .slider-track{
+  
+    gap: 20px;
+   
+} */
 /* User Icon */
 
 .icon-user {
