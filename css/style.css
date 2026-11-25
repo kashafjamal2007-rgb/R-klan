@@ -859,7 +859,13 @@ figure {
     object-fit: cover;
     height: 620px;
 }
-
+.about-sec{
+      background-color: #142748;
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px 0px;
+    /* margin-bottom: 220px; */
+}
 
 /*------------------------------------------------------- Why Choose Us------------------------------------------------------- */
 #Choose {
@@ -965,13 +971,26 @@ figure {
     font-size: 27px;
     font-family: "Inter Tight", sans-serif;
 }
-
+.review-sec{
+background-color: #142748;
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px 0px;
+    /* margin-bottom: 220px; */
+}
 /*---------------------------------------------------------- Contact ----------------------------------------------------------*/
 #Contact .plight {}
 
 .Contact-img {
     width: 100%;
 
+}
+.contact-sec{
+    background-color: #142748;
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px 0px;
+    /* margin-bottom: 220px; */
 }
 
 #changed {
