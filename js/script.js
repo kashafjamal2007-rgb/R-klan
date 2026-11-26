@@ -289,87 +289,35 @@ function dragEnd() {
         startInterval();
     }
 }
-// const track = document.getElementById('sliderTrack');
-// const sliderWrapper = document.querySelector('.slider-wrapper');
-// const originalSlides = document.querySelectorAll('.slide');
-// const dotsContainer = document.getElementById('sliderDots');
+   
+  
 
-// let currentIndex = 0;
-// const totalOriginalSlides = originalSlides.length;
-// const slideIntervalTime = 3000; // हर 3 सेकंड में स्लाइड बदलेगी
-// let slideInterval;
-// let isTransitioning = false;
+  
+    const navbar = document.getElementById("Nav-bar");
+    let lastScrollTop = 0;
 
-// // 1. Seamless Loop के लिए पहली स्लाइड का Clone बनाकर अंत में जोड़ें
-// const firstClone = originalSlides[0].cloneNode(true);
-// track.appendChild(firstClone);
+    window.addEventListener("scroll", function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-// // 2. Dots बनाना (सिर्फ ओरिजिनल स्लाइड्स के लिए)
-// originalSlides.forEach((_, index) => {
-//     const dot = document.createElement('span');
-//     dot.classList.add('dot');
-//     if (index === 0) dot.classList.add('active');
-//     dot.addEventListener('click', () => {
-//         if (isTransitioning) return;
-//         goToSlide(index);
-//         resetInterval();
-//     });
-//     dotsContainer.appendChild(dot);
-// });
+        if (currentScroll > 100 && currentScroll > lastScrollTop) {
+            // 100px se zyada neeche (down) scroll karne par stick active hoga
+            navbar.classList.add("sticky-active");
+        } else {
+            // Upar (bottom to top) scroll karne par ya 100px se upar hone par stick hat jayega (relative)
+            navbar.classList.remove("sticky-active");
+        }
 
-// const dots = document.querySelectorAll('.dot');
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
 
-// function updateDots() {
-//     dots.forEach(dot => dot.classList.remove('active'));
-//     // अगर क्लोन स्लाइड (आखिरी इंडेक्स) पर हैं, तो पहला डॉट (0) एक्टिव करें
-//     const activeDotIndex = currentIndex % totalOriginalSlides;
-//     dots[activeDotIndex].classList.add('active');
-// }
 
-// function goToSlide(index) {
-//     isTransitioning = true;
-//     currentIndex = index;
-//     track.style.transition = 'transform 0.6s ease-in-out';
-//     track.style.transform = `translateX(-${currentIndex * 100}%)`;
-//     updateDots();
-// }
 
-// function nextSlide() {
-//     if (isTransitioning) return;
-//     goToSlide(currentIndex + 1);
-// }
 
-// // 3. ट्रांज़िशन खत्म होने पर क्लोन स्लाइड को चुपचाप असली पहली स्लाइड से बदलें
-// track.addEventListener('transitionend', () => {
-//     isTransitioning = false;
-//     if (currentIndex === totalOriginalSlides) {
-//         track.style.transition = 'none'; // एनीमेशन बंद करें ताकि जंप न दिखे
-//         currentIndex = 0;
-//         track.style.transform = `translateX(0%)`;
-//     }
-// });
 
-// // 4. Auto-play कंट्रोल फंक्शन्स
-// function startInterval() {
-//     clearInterval(slideInterval);
-//     slideInterval = setInterval(nextSlide, slideIntervalTime);
-// }
 
-// function stopInterval() {
-//     clearInterval(slideInterval);
-// }
 
-// function resetInterval() {
-//     stopInterval();
-//     startInterval();
-// }
 
-// // 5. Hover करने पर स्लाइडर को Stop और Resume करना
-// sliderWrapper.addEventListener('mouseenter', stopInterval);
-// sliderWrapper.addEventListener('mouseleave', startInterval);
 
-// // स्लाइडर शुरू करें
-// startInterval();
 
 
 
